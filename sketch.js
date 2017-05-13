@@ -1,58 +1,55 @@
-var noiseScale=0.03;
 var backgroundColor = 0;
+var linesColor = 50;
+var backgroundVertices = [];
+var skip = 20;
+var maxZ = 200;
+
+function preload() {
+    loadImage('assets/img/bg.jpg', function(img) {
+        img.loadPixels();
+        console.log(img.pixels);
+        for(var i = 0; i < img.pixels.length - skip; i += skip) {
+            backgroundVertices.push(img.pixels[i]);
+        }
+    });
+}
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(0);
-
+    background(backgroundColor);
 }
 
 function draw() {
     background(backgroundColor);
-    drawEllipse();
-    drawWave();
-    drawText();
-
+    maxZ = map(mouseY, 0, windowHeight, 200, 1000);
+    drawLines();
 }
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
 
-function mouseClicked() {
-    if(mouseX > 10 && mouseX < 90 && mouseY > 10 && mouseY < 90) {
-        backgroundColor = color(random(255), random(255), random(255));
+//perspective
+function to2D(x, y, z) {
+    var distance = 400;
+    return {
+        x: (-x * distance) / (z - distance),
+        y: -(y * distance) / (z - distance)
+    };
+}
+
+function drawLines() {
+    stroke(linesColor);
+    strokeWeight(2);
+    var index = 0;
+    for(var y = 0; y < windowHeight - skip; y += skip) {
+        for(var x = 0; x < windowWidth - skip; x += skip) {
+            var point1 = to2D(x, y, map(backgroundVertices[index], 0, 255, 0, maxZ));
+            var point2 = to2D(x + skip, y, map(backgroundVertices[index + 1], 0, 255, 0, maxZ));
+            line(point1.x, point1.y, point2.x, point2.y);
+            index++;
+        }
     }
 }
 
-function drawEllipse() {
-    strokeWeight(15);
-    stroke(255);
-    fill(0);
-    ellipse(50, 50, 80, 80);
-}
-
-function drawWave() {
-    strokeWeight(1);
-    for (var x=0; x < windowWidth; x+=1) {
-        var noiseVal = noise((mouseX+x)*noiseScale, mouseY*noiseScale);
-        stroke(255);
-        line(x, mouseY+noiseVal*100, x, height);
-    }
-}
-
-function drawText() {
-    strokeWeight(10);
-    stroke(255);
-    fill(0);
-    textAlign(CENTER, CENTER);
-    textSize(map(windowWidth, 10, 1920, 0, 200));
-    textStyle(BOLD);
-    text("TAJNY PROJEKT", windowWidth/2, windowHeight/2);
-
-    fill(255);
-    textSize(map(windowWidth, 10, 1920, 0, 100));
-    textStyle(BOLD);
-    text("W BUDOWIE", windowWidth/2, windowHeight/2 + 200);
-}
 
