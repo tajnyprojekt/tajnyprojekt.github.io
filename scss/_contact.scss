@@ -1,0 +1,22 @@
+.contact-container {
+  margin-top: 20%;
+  margin-bottom: 100px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  .email-section {
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  a {
+    background-color: $black-color;
+    text-decoration: none;
+    color: $white-color;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

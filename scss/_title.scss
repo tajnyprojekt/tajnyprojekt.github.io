@@ -1,8 +1,10 @@
 .title-container {
   text-align: center;
   color: $white-color;
-  font-size: 630%;
+  font-size: 550%;
+  font-weight: bold;
   position: relative;
+  margin-left: 12.5%;
 
   .text-container {
     z-index: 1;
@@ -12,10 +14,10 @@
   .box {
     position: absolute;
     background: $black-color;
-    width: 75%;//600px;
+    width: 75%;
     height: 45px;
     z-index: -1;
-    top: 230px;
+    top: 170px;
     transition: top 1s;
   }
 

@@ -6,13 +6,14 @@
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/background.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+        <!--<script src="js/background.js"></script>-->
 		<script src="js/app.js"></script>
 		<title>TAJNY PROJEKT</title>
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row">
+			<div class="row row-eq-height">
 				<div class="col-lg-6 left-column">
 					<div class="title-container">
 						<div id="box-1" class="box box-top"></div>
@@ -22,70 +23,67 @@
 							PROJEKT
 						</div>
 					</div>
-					<div class="menu-container">
-                        <div id="menu-item-container-1" class="menu-item-container">
-                            <div id="menu-box-left-1" class="menu-box"></div>
-                            <div id="menu-box-right-1" class="menu-box"></div>
-                            <div class="menu-text">
-                                TAJNY PROJEKT Z ORKIESTRA
-                            </div>
+
+                    <div class="contact-container">
+                        __Contact:<br/>
+                        <div class="email-section">
+                            <a href="mailto:najtajniejszyprojekt@gmail.com">najtajniejszyprojekt@gmail.com</a>
                         </div>
-                        <div id="menu-item-container-2" class="menu-item-container">
-                            <div id="menu-box-left-2" class="menu-box"></div>
-                            <div id="menu-box-right-2" class="menu-box"></div>
-                            <div class="menu-text">
-                                TAJNY PROJEKT Z DYPLOMEM
-                            </div>
-                        </div>
-                        <div id="menu-item-container-3" class="menu-item-container">
-                            <div id="menu-box-left-3" class="menu-box"></div>
-                            <div id="menu-box-right-3" class="menu-box"></div>
-                            <div class="menu-text">
-                                TAJNY PROJEKT Z KROPEK
-                            </div>
-                        </div>
-                        <div id="menu-item-container-4" class="menu-item-container">
-                            <div id="menu-box-left-4" class="menu-box"></div>
-                            <div id="menu-box-right-4" class="menu-box"></div>
-                            <div class="menu-text">
-                                TAJNY PROJEKT Z LINII
-                            </div>
-                        </div>
-					</div>
+                    </div>
 				</div>
 				<div class="col-lg-6 right-column">
-                    <div class="project-container">
-                        <div class="project-title-container">
-                            <div class="title-box-left"></div>
-                            <div class="title-box-right"></div>
-                            <div class="title">
-                                TAJNY PROJEKT Z DYPLOMEM
+                    <div class="row row-eq-height">
+                        <div class="col-xs-2 navigation-container previous-project-button">
+                            <img class="navigation-icon" src="img/arrow-left.svg">
+                            <div class="navigation-label">
+                                Previous_bro
                             </div>
                         </div>
-                        <iframe src="https://player.vimeo.com/video/218154097"
-                                width="640" height="360" frameborder="0"
-                                webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                        </iframe>
-                        <div class="project-description">
-                            <h3>TAJNY PROJEKT Z DYPLOMEM</h3>
-                            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, </p>
+                        <div class="col-xs-10 project-container">
+                            <button class="play-movie-button" data-toggle="modal" data-target="#myModal">
+                                <img class="icon" src="img/play.svg">
+                                <p>Watch_movie</p>
+                            </button>
+                            <img class="project-photo" src="img/cem.jpg">
+                            <div class="project-description">
+                                <h2>
+                                    Tajny_projekt_z_kropek<br/>
+                                    _
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="navigation-container next-project-button">
+                            <img class="navigation-icon" src="img/arrow-right.svg">
+                            <div class="navigation-label">
+                                Next_project
+                            </div>
                         </div>
                     </div>
                 </div>
 			</div>
-            <div class="footer-container">
-                <div class="row footer">
-                    <div class="col-lg-5 footer-col">
-                        <div class="bottom-line"></div>
+
+		</div>
+
+    <!--MODALS-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Tajny_projekt_z_kropek</h4>
                     </div>
-                    <div class="col-lg-2 email-section">
-                        <a href="mailto:najtajniejszyprojekt@gmail.com">najtajniejszyprojekt@gmail.com</a>
-                    </div>
-                    <div class="col-lg-5 footer-col">
-                        <div class="bottom-line"></div>
+                    <div class="modal-body">
+                        <iframe src="https://player.vimeo.com/video/218154097?title=0&byline=0&portrait=0"
+                                width="100%" height="100%" frameborder="0"
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen>
+
+                        </iframe>
                     </div>
                 </div>
             </div>
-		</div>
+        </div>
 	</body>
 </html> 
