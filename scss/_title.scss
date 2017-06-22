@@ -1,0 +1,30 @@
+.title-container {
+  text-align: center;
+  color: $white-color;
+  font-size: 630%;
+  position: relative;
+
+  .text-container {
+    z-index: 1;
+    width: 75%;
+  }
+
+  .box {
+    position: absolute;
+    background: $black-color;
+    width: 75%;//600px;
+    height: 45px;
+    z-index: -1;
+    top: 230px;
+    transition: top 1s;
+  }
+
+  #box-1 {
+    left: 20px;
+  }
+
+  .box-top {
+    top: 10px;
+    transition: top 1s;
+  }
+}

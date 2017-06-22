@@ -1,0 +1,83 @@
+.menu-container {
+
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-top: 30%;
+
+  #menu-item-container-1 {
+    top: 0;
+  }
+
+  #menu-item-container-2 {
+    top: 57px;
+  }
+
+  #menu-item-container-3 {
+    top: 122px;
+  }
+
+  #menu-item-container-4 {
+    top: 190px;
+  }
+
+  .menu-item-container {
+    position: absolute;
+    width: 100%;
+
+    .menu-box {
+      position: absolute;
+      background: $black-color;
+      height: 55px;
+    }
+
+    .menu-text {
+      position: absolute;
+      top: 0;
+      line-height: 55px;
+      padding-left: 40px;
+      color: $white-color;
+      font-size: $medium-text-size;
+    }
+
+    #menu-box-left-1 {
+      width: 57%;
+    }
+
+    #menu-box-right-1 {
+      width: 45%;
+      top: 10px;
+      left: 55%;
+    }
+
+    #menu-box-left-2 {
+      width: 55%;
+    }
+
+    #menu-box-right-2 {
+      width: 46%;
+      top: 13px;
+      left: 54%;
+    }
+
+    #menu-box-left-3 {
+      width: 51%;
+    }
+
+    #menu-box-right-3 {
+      width: 49%;
+      top: 10px;
+      left: 51%;
+    }
+
+    #menu-box-left-4 {
+      width: 48%;
+    }
+
+    #menu-box-right-4 {
+      width: 53%;
+      top: 12px;
+      left: 47%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.project-container {
+
+  .project-title-container {
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    .title {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 80px;
+      line-height: 80px;
+      padding-left: 70px;
+      z-index: 1;
+      color: $white-color;
+      font-size: $big-text-size;
+    }
+
+    .title-box-left {
+      width: 45%;
+      height: 80px;
+      background: $black-color;
+      z-index: -1;
+    }
+
+    .title-box-right {
+      position: absolute;
+      width: 60%;
+      height: 80px;
+      left: 40%;
+      top: 10px;
+      background: $black-color;
+      z-index: -1;
+    }
+  }
+
+  .project-description {
+    background: $white-color;
+    width: 640px;
+    text-align: justify;
+    margin-top: 0;
+  }
+}

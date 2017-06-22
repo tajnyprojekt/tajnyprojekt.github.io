@@ -1,0 +1,69 @@
+$white-color: #ffffff;
+$black-color: #000000;
+$big-text-size: 160%;
+$medium-text-size: 150%;
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  //overflow: hidden;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+}
+
+canvas:focus {
+  outline: 0;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.left-column {
+  padding-left: 50px;
+  padding-right: 100px;
+  @media(max-height: 1200px) {
+    padding-right: 50px;
+  }
+}
+
+.right-column {
+  padding-right: 0;
+}
+
+.footer-container {
+  //position: relative;
+
+  .footer {
+    width: 100%;
+    height: 50px;
+    //position: absolute;
+    //left: 0;
+    //bottom: 0;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    .bottom-line {
+      height: 25px;
+      border-bottom: 1px solid $black-color;
+    }
+
+    .email-section {
+      height: 50px;
+      line-height: 50px;
+
+      a {
+        text-decoration: none;
+        color: $black-color;
+      }
+    }
+  }
+}
