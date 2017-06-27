@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 
-    setInterval(toggleBoxes, 1000);
+    toggleBoxes();
 
     showCurrentProject();
 
@@ -26,19 +26,35 @@ $(document).ready(function () {
         $('#read-more-button').hide();
     });
 
+    setInterval(function () {
+    	glitch('#email-info', 70);
+    }, 10000);
+    setInterval(function () {
+        glitch('#phone-info', 50);
+    }, 9900);
+
+    setInterval(function () {
+        glitch('#box-1', 60);
+    }, 6000);
+
 
 });
 
 var currentProjectIndex = 0;
 var projectIds = [
 	'project-dyplom',
+    'project-heaven',
 	'project-holo',
-	'project-heaven',
     'project-rabbit'
 ];
 
 function toggleBoxes() {
-        $('#box-1, #box-2').toggleClass('box-top');
+    setInterval(function () {
+        $('#box-1').toggleClass('box-top');
+	}, 1000);
+    setInterval(function () {
+        $('#box-2').toggleClass('box-top-2');
+    }, 700);
 }
 
 function getCurrentProjectId() {
@@ -71,7 +87,14 @@ function nextProject() {
 	showCurrentProject();
 }
 
-function logCurrentProject() {
-	console.log(projectIds[currentProjectIndex]);
+function glitch(selector, length) {
+    for(var i = 0; i < length; i+=2) {
+        setTimeout(function() {
+            $(selector).css({'background-color': '#ffffff'});
+        }, i * 4);
+        setTimeout(function() {
+            $(selector).css( {'background-color': '#000000'});
+        }, (i + 1) * 6);
+    }
 }
 

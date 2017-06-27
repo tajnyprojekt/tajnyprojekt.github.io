@@ -1,4 +1,5 @@
 body {
+  cursor: crosshair;
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -47,7 +48,7 @@ canvas:focus {
   height: 45px;
   z-index: -1;
   top: 170px;
-  transition: top 1s;
+  transition: top 0.6s cubic-bezier(0.1, 1, 0.6, 0.8);
 }
 
 .title-container #box-1 {
@@ -56,7 +57,12 @@ canvas:focus {
 
 .title-container .box-top {
   top: 10px;
-  transition: top 1s;
+  transition: top 1s cubic-bezier(0.5, 0, 0.3, 0.9);
+}
+
+.title-container .box-top-2 {
+  top: 10px;
+  transition: top 0.7s cubic-bezier(0.3, 0.6, 0.1, 0.4);
 }
 
 .menu-container {
