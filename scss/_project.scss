@@ -1,6 +1,12 @@
 .navigation-container {
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
+
+  &:hover {
+    transform: rotateZ(-360deg);
+    transition: all 0.4s;
+  }
 
   .navigation-icon {
     width: 90px;
@@ -22,7 +28,7 @@
 }
 
 .project-container {
-
+  display: none;
   padding-right: 0;
   height: 100%;
 
@@ -37,7 +43,7 @@
     position: absolute;
     width: 140px;
     left: calc(50% - 70px);
-    top: 10%;
+    top: calc(50% - 110px);
     text-align: center;
 
     .icon {
@@ -52,6 +58,12 @@
     }
   }
 
+  .slide-right {
+    left: 100%;
+    position: fixed;
+    transition: all 0.4s;
+  }
+
   .project-description {
     position: absolute;
     background-color: $white-color;
@@ -59,13 +71,33 @@
     margin-top: -30%;
     min-height: 30%;
     width: 70%;
+    transition: height 0.4s;
 
     h2 {
       font-size: 140%;
     }
 
     p {
+      font-size: 80%;
       text-align: justify;
+      line-height: 1.7;
+    }
+
+    .read-more-button {
+      background-color: $black-color;
+      text-decoration: none;
+      color: $white-color;
+      font-weight: bold;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+    }
+
+    .collapsed {
+      height: 0;
+      display: none;
     }
   }
 }

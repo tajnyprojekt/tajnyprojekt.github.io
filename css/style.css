@@ -145,6 +145,13 @@ canvas:focus {
 .navigation-container {
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
+}
+
+.navigation-container:hover {
+  -webkit-transform: rotateZ(-360deg);
+  transform: rotateZ(-360deg);
+  transition: all 0.4s;
 }
 
 .navigation-container .navigation-icon {
@@ -166,6 +173,7 @@ canvas:focus {
 }
 
 .project-container {
+  display: none;
   padding-right: 0;
   height: 100%;
 }
@@ -181,7 +189,7 @@ canvas:focus {
   position: absolute;
   width: 140px;
   left: calc(50% - 70px);
-  top: 10%;
+  top: calc(50% - 110px);
   text-align: center;
 }
 
@@ -196,6 +204,12 @@ canvas:focus {
   color: #ffffff;
 }
 
+.project-container .slide-right {
+  left: 100%;
+  position: fixed;
+  transition: all 0.4s;
+}
+
 .project-container .project-description {
   background: #ffffff;
   position: absolute;
@@ -203,6 +217,7 @@ canvas:focus {
   margin-top: -30%;
   min-height: 30%;
   width: 70%;
+  transition: height 0.4s;
 }
 
 .project-container .project-description h2 {
@@ -210,7 +225,23 @@ canvas:focus {
 }
 
 .project-container .project-description p {
+  font-size: 80%;
   text-align: justify;
+  line-height: 1.7;
+}
+
+.project-container .project-description .read-more-button {
+  background: #000000;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-container .project-description .collapsed {
+  height: 0;
+  display: none;
 }
 
 .modal-dialog {
@@ -239,8 +270,9 @@ canvas:focus {
   vertical-align: middle;
 }
 
-.contact-container .email-section {
+.contact-container .info-section {
   margin-top: 10px;
+  margin-bottom: 5px;
   display: inline-block;
 }
 
