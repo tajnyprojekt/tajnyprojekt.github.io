@@ -1,12 +1,259 @@
  <!DOCTYPE html>
 <html>
 	<head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 		<script src="assets/js/p5.min.js"></script>
-		<script src="js/sketch.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/readmore.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+        <!--<script src="js/background.js"></script>-->
+		<script src="js/app.js"></script>
 		<title>TAJNY PROJEKT</title>
 	</head>
 	<body>
+		<div class="container-fluid">
+			<div class="row row-eq-height">
+				<div class="col-lg-6 left-column">
+					<div class="title-container">
+						<div id="box-1" class="box box-top"></div>
+						<div id="box-2" class="box"></div>
+						<div class="text-container">
+							TAJNY<br>
+							PROJEKT
+						</div>
+					</div>
 
+                    <div class="contact-container">
+                        __Contact:
+                        <div>
+                            <div class="info-section">
+                                <a href="mailto:najtajniejszyprojekt@gmail.com">najtajniejszyprojekt@gmail.com</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="info-section">
+                                <a href="tel:0048791101014">0048 791 101 014</a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<div class="col-lg-6 right-column">
+                    <div class="row row-eq-height">
+                        <div id="previous-project-button" class="col-xs-2 navigation-container previous-project-button">
+                            <img class="navigation-icon" src="img/arrow-left.svg">
+                            <div class="navigation-label">
+                                Previous_bro
+                            </div>
+                        </div>
+
+                        <!-- PROJECTS -->
+
+                        <!--DYPLOM-->
+                        <div id="project-dyplom" class="col-xs-10 project-container">
+                            <button class="play-movie-button" data-toggle="modal" data-target="#myModal">
+                                <img class="icon" src="img/play.svg">
+                                <p>Watch_movie</p>
+                            </button>
+                            <img class="project-photo" src="img/dyplom_1.png">
+                            <div class="project-description">
+                                <h2>
+                                    Kaspar_Hauser_libretto<br/>
+                                    _
+                                </h2>
+                                <p>
+                                    <i>An interactive multimedia installation.</i>
+                                    <br/><br/>
+                                    What are the feelings of a person entering a new, unknown reality whose rule is only empirically known, having only knowledge acquired in the world known to him?
+                                    Each of us experienced this situation shortly after birth, but it was impossible to retain that experience. Imagine, however, that by disposing of the knowledge we have acquired "we are entering the world" once again. This world, seemingly similar to the previous one, is governed by other rules that initially remain a mystery. Meanwhile, the new Universum is not something completely alien - we still have five senses, so in the same way as the previous world, we can know this undiscovered.
+                                    <br/><br/>
+                                </p>
+                                <span id="read-more-button" class="read-more-button">Read more...</span>
+                                <p id="read-more-section" class="collapsed">
+                                    Inspired by the history of Kaspar Hauser, we have started to create an interactive multimedia installation that could enable us to enter the novum in the created space.
+                                    In order to create the opportunity to generate new visual stimuli, we set out to build an environment for a potential viewer - contemporary Kaspar. This is the result of a widescreen installation: three interlocking screens that show the images they narrate and the way reality is presented give the opportunity to move to an environment in which the rules of perceiving events break down, cut the time to such an extent that it destroys the known recipient periodicity.
+                                    Libretto is meant to develop a nonstandard perception of what the viewer is perceiving. New rules, unusual perspective, but still tangentially familiar - this time is shown in a different way, so that the sensibility of belonging to the new world is increasing and encouraging exploration.
+                                    With the use of RGB glasses and Kinect as a tracking device, giving the audience the chance to interact, we want to get the impression of being in a new environment, as well as the opportunity to influence events that without the audience lose their chronology. We put the viewer in a non-standard situation and leave him alone with a multitude of experienced stimuli. We want to realize a different direction of perception, a non-traditional way of thinking about space, to break away from what is known - to provoke in the exploring desire to discover, as a result of the curious character of the world, which in the era of universal digitization somewhere lost.
+                                    <br/><br/>
+                                    Installation consist of three projection canvas and Microsoft Kinect sensor. The objective was to explore the way we perceive perspective, and to use our body as an interface instead of mouse or keyboard. It was necessary to write software to enable interactions. The software was created using Java and Processing. To discover fully this artwork, it requires to be watched through special three - color lenses. Playing around with red, blue and green channels in video we've achieved new way how to observe things. We can divide it on three basic parts:
+                                    <br/><br/>
+                                    <b>Intro</b> - interactive intro which starts video sequence, beginning from part one.<br/>
+                                    <b>Part one "Nature"</b> - three different experimental video expressions about nature.<br/>
+                                    <b>Part two "Human"</b> - three different experimental video expressions about human.<br/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Tajny_projekt_z_kropek</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe src="https://player.vimeo.com/video/218154097?title=0&byline=0&portrait=0"
+                                                width="100%" height="100%" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen>
+
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="project-holo" class="col-xs-10 project-container">
+                            <button class="play-movie-button" data-toggle="modal" data-target="#modalHolo">
+                                <img class="icon" src="img/play.svg">
+                                <p>Watch_movie</p>
+                            </button>
+                            <img class="project-photo" src="img/holo.png">
+                            <div class="project-description">
+                                <h2>
+                                    Brand_New_Music_ _Audioreactive_hologram<br/>
+                                    _
+                                </h2>
+                                <p>
+                                    <i>A live hologram installation.</i>
+                                    <br/><br/>
+                                    The double bass player playing the instrument in real time affects the image of himself generated by the Kinect sensor and displayed as a hologram. Using the Processing and Kinect Sensor we've created, software which processes information about music and interprets it as a variable of the image viewed as hologram. In other words - this what he plays affects  the image of him, viewed in real time as a hologram for the people sitting in the audience. The whole system contained the ability to play live holograms, turning it into something like a holographic visualization of a live concert. The concert lasted 45 minutes and was designed and performed as part of the Brand New Music Festival organized by the Academy of Music in Katowice in 21st of November 2016.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalHolo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="modalHoloLabel">Brand_New_Music_-_Audioreactive_hologram</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe src="https://player.vimeo.com/video/192857023?title=0&byline=0&portrait=0"
+                                                width="100%" height="100%" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="project-heaven" class="col-xs-10 project-container">
+                            <button class="play-movie-button" data-toggle="modal" data-target="#modalHeavean">
+                                <img class="icon" src="img/play.svg">
+                                <p>Watch_movie</p>
+                            </button>
+                            <img class="project-photo" src="img/heaven_2.png">
+                            <div class="project-description">
+                                <h2>
+                                    Heaven<br/>
+                                    _
+                                </h2>
+                                <p>
+                                    <i>Experimental video-art, animation.</i>
+                                    <br/><br/>
+                                    Living in a world where we strive for perfect image quality we decided to break this trend and antagonistically we have created a graphic value based on an analog error. The hero of the animation of HEAVEN is specifically involved in the reality in which he exits, with every move or gesture he tries to get out of it, but at the same time he is pulled back into it by merging into one pixel magma.
+                                    <br/><br/>
+                                    We have taken the challenge of creating an experimental vision of the world in which all of us can be mentally involved - the virtual world of interpersonal relationships, the world from which there is no way out.
+                                    Awarded at 2nd FFN cineRAMAfest, Gdynia 2017.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalHeavean" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Heaven</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/hjWgMS5s6MQ"
+                                                width="100%" height="100%" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="project-rabbit" class="col-xs-10 project-container">
+                            <button class="play-movie-button" data-toggle="modal" data-target="#modalKrolik">
+                                <img class="icon" src="img/play.svg">
+                                <p>Watch_movie</p>
+                            </button>
+                            <img class="project-photo" src="img/krolik.png">
+                            <div class="project-description">
+                                <h2>
+                                    Alice_in_Wonderland_rabbit<br/>
+                                    _
+                                </h2>
+                                <p>
+                                    <i>An interactive animation.</i>
+                                    <br/><br/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalKrolik" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">Alice_in_Wonderland_rabbit</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe src="https://player.vimeo.com/video/171574690?title=0&byline=0&portrait=0"
+                                                width="100%" height="100%" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--<div id="project-2" class="col-xs-10 project-container">-->
+                            <!--<button class="play-movie-button" data-toggle="modal" data-target="#myModal2">-->
+                                <!--<img class="icon" src="img/play.svg">-->
+                                <!--<p>Watch_movie</p>-->
+                            <!--</button>-->
+                            <!--<img class="project-photo" src="img/cem.jpg">-->
+                            <!--<div class="project-description">-->
+                                <!--<h2>-->
+                                    <!--Tajny_projekt_z_gówna<br/>-->
+                                    <!--_-->
+                                <!--</h2>-->
+                                <!--<p>-->
+                                    <!--Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing. Cum-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+                            <!--<div class="modal-dialog" role="document">-->
+                                <!--<div class="modal-content">-->
+                                    <!--<div class="modal-header">-->
+                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
+                                        <!--<h4 class="modal-title" id="myModalLabel"> chujj file:///home/michal/workplace/tajny-projekt/tajnyprojekt.github.io/index.htmlTajny_projekt_z_kropek</h4>-->
+                                    <!--</div>-->
+                                    <!--<div class="modal-body">-->
+                                        <!--<iframe src="https://player.vimeo.com/video/218154097?title=0&byline=0&portrait=0"-->
+                                                <!--width="100%" height="100%" frameborder="0"-->
+                                                <!--webkitallowfullscreen mozallowfullscreen allowfullscreen>-->
+
+                                        <!--</iframe>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!-- PROJECTS END -->
+
+                        <div id="next-project-button" class="navigation-container next-project-button">
+                            <img class="navigation-icon" src="img/arrow-right.svg">
+                            <div class="navigation-label">
+                                Next_project
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
 	</body>
 </html> 

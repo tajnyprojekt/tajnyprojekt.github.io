@@ -1,7 +1,9 @@
 {
   "name": "tajnyprojekt.github.io",
-  "version": "1.0.0",
   "description": "Tajny Projekt's demo website",
+  "author": "Michał Urbanski",
+  "homepage": "https://tajnyprojekt.github.io",
+  "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/tajnyprojekt/tajnyprojekt.github.io.git"
   },
-  "author": "Michał Urbanski",
-  "license": "ISC",
-  "homepage": "https://tajnyprojekt.github.io",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
     "gulp": "^3.9.1",
