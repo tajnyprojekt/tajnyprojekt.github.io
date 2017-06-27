@@ -45,6 +45,7 @@ var projectIds = [
 	'project-dyplom',
     'project-heaven',
 	'project-holo',
+	'project-insound',
     'project-rabbit'
 ];
 
