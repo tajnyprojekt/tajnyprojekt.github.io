@@ -19,6 +19,13 @@ $(document).ready(function () {
 
     $('.modal').on('hidden.bs.modal', function () {
         $('.play-movie-button').removeClass('slide-right');
+
+        //TODO: clear this
+        $('.modal-video').each(function (index, element) {
+            var src = $(element).attr('src');
+            $(element).attr('src', '');
+            $(element).attr('src', src);
+        });
     });
 
     $('#read-more-button').on('click', function () {
