@@ -53,7 +53,8 @@ var projectIds = [
     'project-heaven',
 	'project-holo',
 	'project-insound',
-    'project-rabbit'
+    'project-rabbit',
+    'project-escher'
 ];
 
 function toggleBoxes() {

@@ -154,14 +154,14 @@ canvas:focus {
   cursor: pointer;
 }
 
-.navigation-container:hover {
+.navigation-container .navigation-icon {
+  width: 90px;
+}
+
+.navigation-container .navigation-icon:hover {
   -webkit-transform: rotateZ(-360deg);
   transform: rotateZ(-360deg);
   transition: all 0.4s;
-}
-
-.navigation-container .navigation-icon {
-  width: 90px;
 }
 
 .navigation-container .navigation-label {
