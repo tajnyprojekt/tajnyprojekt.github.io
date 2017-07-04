@@ -1,6 +1,7 @@
  <!DOCTYPE html>
- <html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+ <html xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 	<head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="vendors/bootstrap/bootstrap.css">
 		<script src="vendors/jQuery/jquery.min.js"></script>
 		<script src="vendors/bootstrap/bootstrap.js"></script>
@@ -38,8 +39,9 @@
 				</div>
 				<div id="projects-container" class="col-lg-6 right-column">
                     <div class="row row-eq-height">
-                        <div id="previous-project-button" class="col-xs-2 navigation-container previous-project-button">
-                            <img class="navigation-icon" src="resources/img/arrow-left.svg">
+                        <div id="previous-project-button" class="col-xs-2 navigation-container previous-project-button"
+                             v-on:click="previousProject()">
+                            <img class="navigation-icon" src="resources/img/icons/arrow-left.svg">
                             <div class="navigation-label">
                                 Previous_bro
                             </div>
@@ -49,7 +51,7 @@
 
                         <div id="project-container" class="col-xs-10 project-container">
                             <button class="play-movie-button" data-toggle="modal" data-target="#video-modal">
-                                <img class="icon" src="resources/img/play.svg">
+                                <img class="icon" src="resources/img/icons/play.svg">
                                 <p>Watch_movie</p>
                             </button>
                             <img class="project-photo" v-bind:src="currentProject.imagePath">
@@ -85,8 +87,8 @@
 
                         <!-- PROJECTS END -->
 
-                        <div id="next-project-button" class="navigation-container next-project-button">
-                            <img class="navigation-icon" src="resources/img/arrow-right.svg">
+                        <div id="next-project-button" class="navigation-container next-project-button" v-on:click="nextProject();">
+                            <img class="navigation-icon" src="resources/img/icons/arrow-right.svg">
                             <div class="navigation-label">
                                 Next_project
                             </div>
