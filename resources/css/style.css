@@ -55,12 +55,12 @@ canvas:focus {
   left: 20px;
 }
 
-.title-container .box-top {
+.title-container .box-1-top {
   top: 10px;
   transition: top 1s cubic-bezier(0.5, 0, 0.3, 0.9);
 }
 
-.title-container .box-top-2 {
+.title-container .box-2-top {
   top: 10px;
   transition: top 0.7s cubic-bezier(0.3, 0.6, 0.1, 0.4);
 }
@@ -179,7 +179,6 @@ canvas:focus {
 }
 
 .project-container {
-  display: none;
   padding-right: 0;
   height: 100%;
 }
