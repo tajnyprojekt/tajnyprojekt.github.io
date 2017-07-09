@@ -63,7 +63,17 @@
                                 <p>
                                     <i>{{ currentProject.shortDescription }}</i>
                                     <br/><br/>
-                                    {{ currentProject.description }}
+                                    <p v-html="currentProject.description"></p>
+                                </p>
+                                <span id="read-more-button" class="read-more-button"
+                                      v-if="hasReadMoreDescription() && !isReadMoreExpanded"
+                                      v-on:click="expandReadMore()">
+                                    Read more...
+                                </span>
+                            <!--class="collapsed"-->
+                                <p id="read-more-section"
+                                   v-if="isReadMoreExpanded"
+                                   v-html="currentProject.readMoreDescription">
                                 </p>
                             </div>
                             <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

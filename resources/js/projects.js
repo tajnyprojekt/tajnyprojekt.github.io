@@ -4,7 +4,8 @@ var projects = new Vue({
         projectsJsonUrl: 'resources/data/projects.json',
         projects: [],
         currentProjectIndex: 0,
-        currentProject: {}
+        currentProject: {},
+        isReadMoreExpanded: false
     },
     created: function () {
       this.loadProjects();
@@ -12,6 +13,7 @@ var projects = new Vue({
     methods: {
 
         updateCurrentProject: function() {
+            this.isReadMoreExpanded = false;
             this.currentProject = this.projects[this.currentProjectIndex];
         },
 
@@ -38,6 +40,15 @@ var projects = new Vue({
                 this.currentProjectIndex = this.projects.length - 1;
             }
             this.updateCurrentProject();
+        },
+
+        hasReadMoreDescription: function () {
+            console.log(this.currentProject.readMoreDescription);
+            return this.currentProject.readMoreDescription !== "";
+        },
+
+        expandReadMore: function () {
+            this.isReadMoreExpanded = true;
         }
     }
 });

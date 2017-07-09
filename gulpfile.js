@@ -39,7 +39,7 @@ gulp.task('minify-css', ['sass'], () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('resources/scss/**/*.scss', ['sass']);
 });
 
 gulp.task('default', ['sass', 'watch']);
