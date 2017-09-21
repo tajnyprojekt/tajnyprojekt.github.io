@@ -1,4 +1,9 @@
 .contact-container {
+
+  @media (max-width: 1199px) {
+    font-size: 2em;
+  }
+
   margin-top: 20%;
   margin-bottom: 100px;
   display: inline-block;
@@ -12,6 +17,7 @@
   }
 
   a {
+
     background-color: $black-color;
     text-decoration: none;
     color: $white-color;

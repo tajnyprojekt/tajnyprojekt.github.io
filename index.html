@@ -39,7 +39,7 @@
 				</div>
 				<div id="projects-container" class="col-lg-6 right-column">
                     <div class="row row-eq-height">
-                        <div id="previous-project-button" class="col-xs-2 navigation-container previous-project-button"
+                        <div id="previous-project-button" class="col-lg-2 col-sm-6 col-xs-6 navigation-container previous-project-button"
                              v-on:click="previousProject()">
                             <img class="navigation-icon" src="resources/img/icons/arrow-left.svg">
                             <div class="navigation-label">
@@ -47,9 +47,16 @@
                             </div>
                         </div>
 
+                        <div id="next-project-button_small-screen" class="col-sm-6 col-xs-6 navigation-container next-project-button" v-on:click="nextProject();">
+                            <img class="navigation-icon" src="resources/img/icons/arrow-right.svg">
+                            <div class="navigation-label">
+                                Next_project
+                            </div>
+                        </div>
+
                         <!-- PROJECTS -->
 
-                        <div id="project-container" class="col-xs-10 project-container">
+                        <div id="project-container" class="col-lg-10 col-sm-12 col-xs-12 project-container">
                             <button class="play-movie-button" data-toggle="modal" data-target="#video-modal">
                                 <img class="icon" src="resources/img/icons/play.svg">
                                 <p>Watch_movie</p>
@@ -97,7 +104,7 @@
 
                         <!-- PROJECTS END -->
 
-                        <div id="next-project-button" class="navigation-container next-project-button" v-on:click="nextProject();">
+                        <div id="next-project-button_large-screen" class="navigation-container next-project-button" v-on:click="nextProject();">
                             <img class="navigation-icon" src="resources/img/icons/arrow-right.svg">
                             <div class="navigation-label">
                                 Next_project
