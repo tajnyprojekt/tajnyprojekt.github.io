@@ -4,25 +4,17 @@ $(document).ready(function () {
     toggleBoxes();
     glitchElements();
 
-    // $('.play-movie-button').on('click', function () {
-    //     $('.play-movie-button').addClass('slide-right');
-    // });
-    //
-    // $('.modal').on('hidden.bs.modal', function () {
-    //     $('.play-movie-button').removeClass('slide-right');
-    //
-    //     //TODO: clear this
-    //     $('.modal-video').each(function (index, element) {
-    //         var src = $(element).attr('src');
-    //         $(element).attr('src', '');
-    //         $(element).attr('src', src);
-    //     });
-    // });
-    //
-    // $('#read-more-button').on('click', function () {
-    //     $('#read-more-section').toggleClass('collapsed');
-    //     $('#read-more-button').hide();
-    // });
+    $('.play-movie-button').on('click', function () {
+        $('.play-movie-button').addClass('slide-right');
+    });
+
+    $('.modal').on('hidden.bs.modal', function () {
+        $('.play-movie-button').removeClass('slide-right');
+        $('#video-modal').each(function (index, element) {
+            $(element).attr('src', '');
+            projects.handleModalClose();
+        });
+    });
 });
 
 function toggleBoxes() {

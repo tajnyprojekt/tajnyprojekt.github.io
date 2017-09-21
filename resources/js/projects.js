@@ -43,12 +43,20 @@ var projects = new Vue({
         },
 
         hasReadMoreDescription: function () {
-            console.log(this.currentProject.readMoreDescription);
             return this.currentProject.readMoreDescription !== "";
         },
 
         expandReadMore: function () {
             this.isReadMoreExpanded = true;
+        },
+
+        handleModalClose: function() { //TODO: clear this ;<
+            var videoUrl = this.currentProject.videoUrl;
+            this.currentProject.videoUrl = '';
+            console.log('videoUrl ' + this.currentProject.videoUrl);
+            setTimeout(function() {
+                projects.currentProject.videoUrl = videoUrl;
+            }, 10);
         }
     }
 });
