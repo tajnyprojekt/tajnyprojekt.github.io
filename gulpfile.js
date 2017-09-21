@@ -23,23 +23,23 @@ const autoprefixerOptions = {
 };
 
 gulp.task('sass', () => {
-    return gulp.src('scss/style.scss')
+    return gulp.src('resources/scss/style.scss')
         .pipe(errorHandler())
         .pipe(sass.sync({outputStyle: 'expanded'}))
         .pipe(autoprefixer(autoprefixerOptions))
         .pipe(cssShorthand())
         .pipe(gcmq())
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('resources/css'))
 });
 
 gulp.task('minify-css', ['sass'], () => {
-    return gulp.src('css/style.css')
+    return gulp.src('resources/css/style.css')
         .pipe(cleanCSS())
         .pipe(gulp.dest('css'))
 });
 
 gulp.task('watch', () => {
-    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('resources/scss/**/*.scss', ['sass']);
 });
 
 gulp.task('default', ['sass', 'watch']);

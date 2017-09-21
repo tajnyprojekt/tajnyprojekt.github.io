@@ -10,7 +10,7 @@ body {
   min-height: 100%;
   font-family: 'Space Mono', monospace;
   color: $black-color;
-  //overflow: hidden;
+  overflow-y:scroll;
 }
 
 canvas {
