@@ -28,23 +28,26 @@ function toggleBoxes() {
 
 function glitchElements() {
     setInterval(function () {
-        glitch('#email-info', 70);
+        glitch('#email-info', 70, '#ffffff', '#000000');
     }, 10000);
     setInterval(function () {
-        glitch('#phone-info', 50);
+        glitch('#phone-info', 50, '#ffffff', '#000000');
     }, 9900);
     setInterval(function () {
-        glitch('#box-1', 60);
+        glitch('#box-1', 60, '#ffffff', '#000000');
     }, 6000);
+    setInterval(function () {
+        glitch('#insta-info', 40, '#000000', '#ffffff');
+    }, 3000);
 }
 
-function glitch(selector, length) {
+function glitch(selector, length, startColor, endColor) {
     for(var i = 0; i < length; i+=2) {
         setTimeout(function() {
-            $(selector).css({'background-color': '#ffffff'});
+            $(selector).css({'background-color': startColor});
         }, i * 4);
         setTimeout(function() {
-            $(selector).css( {'background-color': '#000000'});
+            $(selector).css( {'background-color': endColor});
         }, (i + 1) * 6);
     }
 }

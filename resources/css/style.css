@@ -261,12 +261,26 @@ canvas:focus {
   display: inline-block;
 }
 
-.contact-container a {
-  background: #000000;
+.contact-container .contact-link {
   padding: 5px 10px;
   text-decoration: none;
-  color: #ffffff;
   font-weight: bold;
+}
+
+.contact-container .contact-link.black {
+  background: #000000;
+  color: #ffffff;
+}
+
+.contact-container .contact-link.white {
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.contact-container .insta-icon {
+  max-height: 1.25em;
+  margin-bottom: 0.25em;
 }
 
 @media (min-width: 1199px) {
