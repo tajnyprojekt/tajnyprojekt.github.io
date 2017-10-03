@@ -51,6 +51,7 @@
   @media (max-width: 1199px) {
     margin-top: 50px;
     font-size: 2em;
+    padding-left: 0;
   }
   padding-right: 0;
   height: 100%;
@@ -97,12 +98,17 @@
 
   .project-description {
     background-color: $white-color;
-    padding: 30px 30px 10px 20px;
     @media (min-width: 1199px) {
+      padding: 30px 30px 10px 20px;
       position: absolute;
       margin-top: -30%;
       min-height: 40%;
       width: 70%;
+    }
+
+    @media (max-width: 1199px) {
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
     transition: height 0.4s;

@@ -205,7 +205,6 @@ canvas:focus {
 
 .project-container .project-description {
   background: #ffffff;
-  padding: 30px 30px 10px 20px;
   transition: height 0.4s;
 }
 
@@ -305,6 +304,7 @@ canvas:focus {
   }
 
   .project-container .project-description {
+    padding: 30px 30px 10px 20px;
     position: absolute;
     margin-top: -30%;
     min-height: 40%;
@@ -328,12 +328,18 @@ canvas:focus {
   .project-container {
     margin-top: 50px;
     font-size: 2em;
+    padding-left: 0;
   }
 
   .project-container .play-movie-button {
     width: 240px;
     left: calc(50% - 120px);
     top: 10%;
+  }
+
+  .project-container .project-description {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .modal-dialog {
