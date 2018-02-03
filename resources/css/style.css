@@ -282,6 +282,42 @@ canvas:focus {
   margin-bottom: 0.25em;
 }
 
+.trip {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/0/06/Widok_ze_szczytu_Skrzycznego_w_Szczyrku_na_Beskid.jpg");
+  font-size: 2.5rem;
+}
+
+.trip h4 {
+  font-size: 4rem;
+  margin-top: 50px;
+}
+
+.trip .map {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.trip .container {
+  background: rgba(255, 255, 255, 0.5);
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.trip button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  height: 150px;
+  margin-left: 10%;
+}
+
+.trip .footer {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 @media (min-width: 1199px) {
   .previous-project-button {
     margin-top: 50%;
