@@ -1,5 +1,23 @@
 [
   {
+    "imagePath": "resources/img/projects/insomnia.png",
+    "videoUrl": "https://www.pornhub.com/embed/ph5a988af9c1353",
+    "title": "Insomnia dj set",
+    "shortDescription": "Live performance in secret spot",
+    "description": "Live, audioreactive visuals and Insomnia's dj set. This is a teaser of the full performance.",
+    "readMoreDescription": "Sorry - this is only temporary video upload provider... Will be changed soon."
+  },
+
+  {
+    "imagePath": "resources/img/projects/cybul.png",
+    "videoUrl": "https://player.vimeo.com/video/258172422?title=0&byline=0&portrait=0",
+    "title": "Cybulski: interactive",
+    "shortDescription": "An interactive multimedia installation",
+    "description": "",
+    "readMoreDescription": ""
+  },
+
+  {
     "imagePath": "resources/img/projects/faultyNature.png",
     "videoUrl": "https://player.vimeo.com/video/244810327?title=0&byline=0",
     "title": "The Faulty Nature",
