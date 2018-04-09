@@ -312,6 +312,11 @@ canvas:focus {
   margin-bottom: 0.25em;
 }
 
+.notice {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 @media (min-width: 1199px) {
   .project-container .play-movie-button {
     width: 140px;
