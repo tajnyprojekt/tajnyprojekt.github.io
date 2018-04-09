@@ -1,6 +1,12 @@
 @import "base";
+@import "mixins";
 @import "title";
 @import "menu";
 @import "project";
 @import "contact";
 @import "trip";
+
+.notice {
+  font-size: 2rem;
+  font-weight: bold;
+}

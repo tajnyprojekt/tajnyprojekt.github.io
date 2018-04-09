@@ -1,7 +1,8 @@
 .title-container {
+  cursor: not-allowed;
   text-align: center;
   color: $white-color;
-  font-size: 550%;
+  font-size: 150px;
   font-weight: bold;
   position: relative;
   margin-left: 12.5%;
@@ -15,9 +16,9 @@
     position: absolute;
     background: $black-color;
     width: 75%;
-    height: 45px;
+    height: 70px;
     z-index: -1;
-    top: 170px;
+    top: 330px;
     transition: top 0.6s cubic-bezier(0.1, 1, 0.6, 0.8);
   }
 

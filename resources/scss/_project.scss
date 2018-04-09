@@ -1,15 +1,14 @@
 .navigation-container {
   text-align: center;
   vertical-align: middle;
-  cursor: pointer;
+  cursor: none;
 
   @media (max-width: 1199px) {
     font-size: 2em;
   }
 
   .navigation-icon {
-    width: 90px;
-
+    width: 200px;
     &:hover {
       transform: rotateZ(-360deg);
       transition: all 0.4s;
@@ -17,37 +16,60 @@
   }
 
   .navigation-label {
-    font-size: 90%;
+    color: #00ffff;
+    font-size: 200%;
   }
 }
 
-.previous-project-button {
-  @media (min-width: 1199px) {
-    margin-top: 50%;
-  }
-}
-
-.next-project-button {
-  @media (min-width: 1199px) {
-    float: right;
-    margin-top: 15px;
-    margin-right: 30px;
-  }
-}
-
-#next-project-button_large-screen {
-  @media (max-width: 1199px) {
-    display: none;
-  }
-}
-
-#next-project-button_small-screen {
-  @media (min-width: 1199px) {
-    display: none;
-  }
-}
+//.previous-project-button {
+//  @media (min-width: 1199px) {
+//    //margin-top: 50%;
+//  }
+//}
+//
+//.next-project-button {
+//  @media (min-width: 1199px) {
+//    //float: right;
+//    margin-top: 15px;
+//    margin-right: 30px;
+//  }
+//}
+//
+//#next-project-button_large-screen {
+//  @media (max-width: 1199px) {
+//    display: none;
+//  }
+//}
+//
+//#next-project-button_small-screen {
+//  @media (min-width: 1199px) {
+//    display: none;
+//  }
+//}
 
 .project-container {
+
+  .full-size {
+    height: 100%;
+    width: 100%;
+  }
+
+  .full-height {
+    height: 100%;
+  }
+
+  .project-navigation {
+    position: absolute;
+    cursor: none;
+    &__previous {
+
+    }
+
+    &__next {
+
+    }
+  }
+
   @media (max-width: 1199px) {
     margin-top: 50px;
     font-size: 2em;
@@ -98,12 +120,16 @@
 
   .project-description {
     background-color: $white-color;
+    //background-image: url(../img/bg.png);
+    //background-size: contain;
+    //background-repeat: repeat;
     @media (min-width: 1199px) {
       padding: 30px 30px 10px 20px;
       position: absolute;
       margin-top: -30%;
-      min-height: 40%;
-      width: 70%;
+      //height: 600px;
+      //min-height: 40%;
+      width: 75%;
     }
 
     @media (max-width: 1199px) {
@@ -114,13 +140,20 @@
     transition: height 0.4s;
 
     h2 {
-      font-size: 140%;
+      font-size: 600%;
+      font-weight: 900;
     }
 
     p {
-      font-size: 80%;
+      font-size: 200%;
+      font-weight: 400;
       text-align: justify;
       line-height: 1.7;
+
+      i {
+        font-size: 200%;
+        font-weight: 900;
+      }
     }
 
     .read-more-button {
@@ -136,8 +169,8 @@
     }
 
     .collapsed {
-      height: 0;
-      display: none;
+      //height: 0;
+      //display: none;
     }
   }
 }

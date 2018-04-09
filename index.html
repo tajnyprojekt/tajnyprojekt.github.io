@@ -31,7 +31,7 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row row-eq-height">
-				<div class="col-lg-6 left-column">
+				<div class="col-lg-12 left-column">
 					<div id="title-container" class="title-container">
 						<div id="box-1" class="box box-1-top"></div>
 						<div id="box-2" class="box"></div>
@@ -41,19 +41,27 @@
 						</div>
 					</div>
 
+                    <p class="notice">
+                        Zobacz naszą nową stronę oraz portfolio na:<br>
+                        See our new website and portfolio on:<br>
+                        <a href="http://tajnyprojekt.com">tajnyprojekt.com</a>
+                    </p>
+
+                    <div class="contact-container-wrapper">
+                    <div class="contact-container-area">
                     <div class="contact-container">
                         __Contact:
                         <div>
                             <div class="info-section">
-                                <a id="email-info" class="contact-link black" href="mailto:najtajniejszyprojekt@gmail.com">
-                                    najtajniejszyprojekt@gmail.com
+                                <a id="email-info" class="contact-link black" href="mailto:hello@tajnyprojekt.com">
+                                    hello@tajnyprojekt.com
                                 </a>
                             </div>
                         </div>
                         <div>
                             <div class="info-section">
-                                <a id="phone-info" class="contact-link black" href="tel:0048791101014">
-                                    0048 791 101 014
+                                <a id="phone-info" class="contact-link black" href="tel:0048605079055">
+                                    0048 605 079 055
                                 </a>
                             </div>
                         </div>
@@ -66,82 +74,10 @@
                             </div>
                         </div>
                     </div>
-				</div>
-				<div id="projects-container" class="col-lg-6 right-column">
-                    <div class="row row-eq-height">
-                        <div id="previous-project-button" class="col-lg-2 col-sm-6 col-xs-6 navigation-container previous-project-button"
-                             v-on:click="previousProject()">
-                            <img class="navigation-icon" src="resources/img/icons/arrow-left.svg">
-                            <div class="navigation-label">
-                                Previous_bro
-                            </div>
-                        </div>
-
-                        <div id="next-project-button_small-screen" class="col-sm-6 col-xs-6 navigation-container next-project-button" v-on:click="nextProject();">
-                            <img class="navigation-icon" src="resources/img/icons/arrow-right.svg">
-                            <div class="navigation-label">
-                                Next_project
-                            </div>
-                        </div>
-
-                        <!-- PROJECTS -->
-
-                        <div id="project-container" class="col-lg-10 col-sm-12 col-xs-12 project-container">
-                            <button class="play-movie-button" data-toggle="modal" data-target="#video-modal">
-                                <img class="icon" src="resources/img/icons/play.svg">
-                                <p>Watch_movie</p>
-                            </button>
-                            <img class="project-photo" v-bind:src="currentProject.imagePath">
-                            <div class="project-description">
-                                <h2>
-                                    {{ currentProject.title }}<br/>
-                                    _
-                                </h2>
-                                <p>
-                                    <i>{{ currentProject.shortDescription }}</i>
-                                    <br/><br/>
-                                    <p v-html="currentProject.description"></p>
-                                </p>
-                                <span id="read-more-button" class="read-more-button"
-                                      v-if="hasReadMoreDescription() && !isReadMoreExpanded"
-                                      v-on:click="expandReadMore()">
-                                    Read more...
-                                </span>
-                            <!--class="collapsed"-->
-                                <p id="read-more-section"
-                                   v-if="isReadMoreExpanded"
-                                   v-html="currentProject.readMoreDescription">
-                                </p>
-                            </div>
-                            <div class="modal fade" id="video-modal" ref="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title">{{ currentProject.title }}</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <iframe v-bind:src="currentProject.videoUrl"
-                                                    width="100%" height="100%" frameborder="0"
-                                                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                                            </iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- PROJECTS END -->
-
-                        <div id="next-project-button_large-screen" class="navigation-container next-project-button" v-on:click="nextProject();">
-                            <img class="navigation-icon" src="resources/img/icons/arrow-right.svg">
-                            <div class="navigation-label">
-                                Next_project
-                            </div>
-                        </div>
                     </div>
-                </div>
+                    </div>
+				</div>
+
 			</div>
 		</div>
 
